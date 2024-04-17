@@ -52,9 +52,9 @@
 
   <body class="text-white font-titan-one overflow-x-hidden">
     <!-- Navbar -->
-    <nav class="bg-[#1F2123] sticky top-0 z-50 font-sans">
+    <nav class="bg-[#1F2123] sticky top-0 z-10 font-sans">
       <div
-        class="container mx-auto flex items-center justify-between px-4 sm:px-8 py-4"
+        class="container mx-auto flex items-center justify-between px-4 sm:px-8 lg:py-4"
       >
         <a href="#" title="Dogatoshi">
           <img
@@ -129,7 +129,7 @@
         </div>
 
         <div>
-          <button type="button">
+          <button type="button" id="menu-button">
             <img
               src="./assets/images/menu-icon.svg"
               alt="menu icon"
@@ -139,6 +139,70 @@
         </div>
       </div>
     </nav>
+
+    <!-- Mobile Navbar -->
+    <div
+      id="mobile-navbar"
+      class="fixed top-0 left-0 w-full h-full bg-[#1F2123] z-50 transform translate-x-full overflow-y-auto transition-transform duration-300 ease-in-out"
+    >
+      <button
+        id="close-button"
+        type="button"
+        class="absolute top-8 right-8 text-4xl"
+      >
+        X
+      </button>
+      <ul class="flex flex-col gap-8 p-8 text-2xl">
+        <li>
+          <a
+            href="#hero"
+            title="Home"
+            class="hover:text-yellow-500 transition-colors"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#bone-story"
+            title="Bone Story"
+            class="hover:text-yellow-500 transition-colors"
+            >Bone Story</a
+          >
+        </li>
+        <li>
+          <a
+            href="#tokenomics"
+            title="Tokenomics"
+            class="hover:text-yellow-500 transition-colors"
+            >Tokenomics</a
+          >
+        </li>
+        <li>
+          <a
+            href="#buy-doga"
+            title="Buy $DOGA"
+            class="hover:text-yellow-500 transition-colors"
+            >Buy $DOGA</a
+          >
+        </li>
+        <li>
+          <a
+            href="#why-doga"
+            title="Pawtnerships"
+            class="hover:text-yellow-500 transition-colors"
+            >Pawtnerships</a
+          >
+        </li>
+        <li>
+          <a
+            href="#pledge-and-signature"
+            title="News"
+            class="hover:text-yellow-500 transition-colors"
+            >News</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <!-- Hero Section -->
     <section
