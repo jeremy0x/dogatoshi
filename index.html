@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-neutral-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogatoshi</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/dogatoshi-icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'hero-pattern': "url('./assets/images/hero-pattern.png')",
+            },
+            fontFamily: {
+              'titan-one': ['Titan One', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Titan One Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="text-white font-titan-one">
+    <!-- Hero Section -->
+    <section
+      class="bg-hero-pattern bg-cover min-h-screen grid place-content-center"
+    >
+      <div
+        class="container mx-auto flex flex-col-reverse items-center justify-between md:flex-row"
+      >
+        <div class="max-w-sm mx-auto pl-8">
+          <h1 class="text-6xl lg:text-8xl font-bold uppercase">
+            <span>DOGA</span><br />
+            <span class="text-yellow-500">TOSHI</span>
+          </h1>
+
+          <p class="text-lg mt-4 font-sans">
+            Paw-nonymous: a clandestine group of dogs who secretly run the
+            neighborhood.
+          </p>
+
+          <button type="button" title="Buy Doga" class="pt-8">
+            <img
+              src="./assets/images/bone-button.png"
+              alt=""
+              class="object-cover w-48 lg:w-60 h-20"
+            />
+          </button>
+        </div>
+
+        <div>
+          <img
+            src="./assets/images/hero-image.png"
+            alt="dog image"
+            class="max-w-full w-[800px]"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
