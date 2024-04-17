@@ -37,7 +37,7 @@
         class="container mx-auto flex flex-col-reverse items-center justify-evenly md:flex-row gap-8 px-8"
       >
         <div class="max-w-sm" data-aos="fade-up">
-          <h1 class="text-6xl lg:text-8xl font-bold uppercase">
+          <h1 class="text-6xl lg:text-8xl uppercase">
             <span>DOGA</span><br />
             <span class="text-yellow-500">TOSHI</span>
           </h1>
@@ -114,8 +114,8 @@
 
     <!-- 3 Steps to Know the Project -->
     <section class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-8 py-28 grid gap-10" data-aos="fade-up">
-        <div class="text-center grid gap-2">
+      <div class="container mx-auto px-8 py-28 grid gap-10">
+        <div class="text-center grid gap-2" data-aos="fade-up">
           <h2 class="text-yellow-500 text-4xl uppercase">
             3 steps to know the project
           </h2>
@@ -125,13 +125,16 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-8">
-          <div class="flex-1 max-w-80">
+        <div
+          class="flex flex-wrap justify-center gap-8 flex-col sm:flex-row"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full sm:max-w-80">
             <div class="flex flex-col gap-4 p-4">
               <img
                 src="./assets/images/bone.png"
                 alt="Bone"
-                class="w-24 mx-auto"
+                class="w-24 sm:mx-auto"
               />
               <h3 class="text-yellow-500 text-2xl uppercase">
                 1. $Dog<span class="text-white">A</span>
@@ -143,12 +146,12 @@
               </p>
             </div>
           </div>
-          <div class="flex-1 max-w-80">
+          <div class="flex-1 w-full sm:max-w-80">
             <div class="flex flex-col gap-4 p-4">
               <img
                 src="./assets/images/dog-paw.png"
                 alt="Dog Paw"
-                class="w-24 mx-auto"
+                class="w-24 sm:mx-auto"
               />
               <h3 class="text-yellow-500 text-2xl uppercase">
                 2. Paw Patro<span class="text-white">l</span>
@@ -159,12 +162,12 @@
               </p>
             </div>
           </div>
-          <div class="flex-1 max-w-80">
+          <div class="flex-1 w-full sm:max-w-80">
             <div class="flex flex-col gap-4 p-4">
               <img
                 src="./assets/images/dog.png"
                 alt="Dog"
-                class="w-24 mx-auto"
+                class="w-24 sm:mx-auto"
               />
               <h3 class="text-yellow-500 text-2xl uppercase">
                 3. Mutt-fi<span class="text-white">A</span>
@@ -181,7 +184,69 @@
           src="./assets/images/no-cats.png"
           alt="no cats past this point"
           class="max-w-full mx-auto"
+          data-aos="fade-up"
         />
+      </div>
+    </section>
+
+    <!-- BARKCHAIN Tokenomics -->
+    <section
+      class="bg-features-bg-pattern sm:bg-gradient-pattern bg-cover uppercase py-20"
+    >
+      <div
+        class="container mx-auto flex flex-col-reverse items-center justify-center md:flex-row gap-8 px-8"
+        data-aos="fade-up"
+      >
+        <div class="grid gap-8 xl:pl-24">
+          <h3 class="text-4xl text-yellow-500 hidden sm:block">
+            BARKCHAIN Tokenomics
+          </h3>
+
+          <div>
+            <h4 class="text-xl text-yellow-500">LEASH LAWS 🔑</h4>
+            <ul>
+              <li>95% DOGMMUNITY</li>
+              <li>5% BARK BRIGADE KOLS</li>
+              <li>100% TGE</li>
+              <li>100% FETCH & BURN UNSOLD TOKENS</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xl text-yellow-500">
+              🤑💰 WHERE TO BURY THE BONE? 💰🤑
+            </h4>
+
+            <ul>
+              <li>1% LIQUIDITY SPLASH POOL</li>
+              <li>99% ENDLESS BUYBACK TREAT</li>
+              <li>TREATS</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xl text-yellow-500">Stay for the treat 🦴</h4>
+            <p class="capitalize">
+              Hold your bone and get ready to be thrown some treats
+            </p>
+          </div>
+        </div>
+
+        <div class="">
+          <img
+            src="./assets/images/dog-statue-w-paws.png"
+            alt="dog image with paws"
+            class="max-w-full lg:mr-auto hidden sm:block"
+          />
+
+          <img
+            src="./assets/images/dog-in-suit.png"
+            alt="dog dressed in suit"
+            class="max-w-full sm:hidden"
+          />
+        </div>
+
+        <h3 class="text-4xl text-yellow-500 sm:hidden">BARKCHAIN Tokenomics</h3>
       </div>
     </section>
   </body>
