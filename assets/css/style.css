@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  cursor: url('../images/bone-cursor.png'), auto;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
 img {
   font-size: 0.5rem;
 }
