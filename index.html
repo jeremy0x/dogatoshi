@@ -217,8 +217,12 @@
     <!-- Hero Section -->
     <section
       id="hero"
-      class="bg-hero-pattern bg-cover min-h-screen grid place-items-center"
+      class="bg-hero-pattern bg-cover min-h-screen grid place-items-center relative"
     >
+      <div
+        class="absolute bottom-0 w-full h-10 bg-gradient-to-t from-[#25272D] to-transparent"
+      ></div>
+
       <div
         class="container mx-auto flex flex-col-reverse items-center justify-evenly md:flex-row gap-8 px-8"
       >
@@ -304,7 +308,7 @@
 
     <!-- 3 Steps to Know the Project -->
     <section id="bone-story" class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-4 sm:px-8 py-20 md:py-40 grid gap-10">
+      <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-10">
         <div class="text-center grid gap-2" data-aos="fade-up">
           <h2 class="text-yellow-500 text-4xl uppercase">
             3 steps to know the project
@@ -385,7 +389,7 @@
       class="bg-gradient-pattern-portrait md:bg-gradient-pattern bg-cover uppercase py-20 relative"
     >
       <div
-        class="absolute bottom-0 w-full h-4 bg-gradient-to-t from-[#25272D] to-transparent"
+        class="absolute bottom-0 w-full h-10 bg-gradient-to-t from-[#25272D] to-transparent"
       ></div>
 
       <div class="absolute right-0 bottom-4 hidden md:block">
@@ -448,9 +452,20 @@
       </div>
     </section>
 
+    <!-- Bone Details -->
+    <section id="bone-details" class="bg-features-bg-pattern bg-cover">
+      <div class="container mx-auto px-4 sm:px-8 py-10 sm:pt-40 sm:pb-20">
+        <img
+          src="./assets/images/details-bone.svg"
+          alt=""
+          class="max-w-full mx-auto"
+        />
+      </div>
+    </section>
+
     <!-- How to Buy $DOGA -->
     <section id="buy-doga" class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-4 sm:px-8 py-20 md:py-40 grid gap-16">
+      <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-16">
         <div class="text-center grid gap-2" data-aos="fade-up">
           <h2 class="text-yellow-500 text-4xl uppercase">How to buy $DOGA</h2>
           <p class="max-w-lg mx-auto">
@@ -529,7 +544,7 @@
 
     <!-- Why Pick Dogatoshi -->
     <section id="why-doga" class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-4 sm:px-8 py-20 md:py-40 grid gap-16">
+      <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-16">
         <h2
           class="text-center text-yellow-500 text-4xl uppercase"
           data-aos="fade-up"
@@ -629,7 +644,7 @@
       class="bg-features-bg-pattern bg-cover font-sans"
     >
       <div
-        class="container mx-auto px-4 sm:px-8 py-20 md:py-40 flex flex-col md:flex-row gap-16 justify-between"
+        class="container mx-auto px-4 sm:px-8 py-20 flex flex-col md:flex-row gap-16 justify-between"
       >
         <div
           class="grid gap-8 flex-1 max-w-sm mx-auto sm:mx-0"
