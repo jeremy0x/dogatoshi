@@ -371,13 +371,24 @@
     <!-- BARKCHAIN Tokenomics -->
     <section
       id="tokenomics"
-      class="bg-features-bg-pattern sm:bg-gradient-pattern bg-cover uppercase py-20"
+      class="bg-gradient-pattern-portrait md:bg-gradient-pattern bg-cover uppercase py-20 relative"
     >
+      <div
+        class="absolute bottom-0 w-full h-4 bg-gradient-to-t from-[#25272D] to-transparent"
+      ></div>
+
+      <div class="absolute right-0 bottom-4 hidden md:block">
+        <img src="./assets/images/right-paw.svg" alt="" />
+      </div>
+      <div class="absolute left-0 bottom-4 hidden md:block">
+        <img src="./assets/images/left-paw.svg" alt="" />
+      </div>
+
       <div
         class="container mx-auto flex flex-col-reverse items-center justify-center md:flex-row gap-2 px-8 xl:px-0"
         data-aos="fade-up"
       >
-        <div class="grid gap-8">
+        <div class="grid gap-8 flex-1">
           <h3 class="text-4xl text-yellow-500 hidden sm:block">
             BARKCHAIN Tokenomics
           </h3>
@@ -412,7 +423,7 @@
           </div>
         </div>
 
-        <div class="">
+        <div class="flex-1">
           <img
             src="./assets/images/dog-statue-w-paws.png"
             alt="dog image with paws"
