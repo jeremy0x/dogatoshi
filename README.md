@@ -1,4 +1,4 @@
-# $DOGATOSHI
+# ![dogatoshi logo](https://dogatoshi.vercel.app/assets/images/dogatoshi-logo.png)
 
 Welcome to $DOGATOSHI, where woofs meet wealth in the world of meme tokens! 🐾🌕
 
