@@ -6,15 +6,24 @@ body {
   cursor: url('../images/bone-cursor.png'), auto;
 }
 
-a:hover,
-button:hover {
-  cursor: pointer;
-}
-
 img {
   font-size: 0.5rem;
 }
 
 .container {
   max-width: 1200px !important;
+}
+
+.slowly-bounce {
+  animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }

@@ -14,7 +14,6 @@
     />
     <meta property="og:site_name" content="$DOGATOSHI" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/script.js" defer></script>
 
     <!-- Favicon -->
@@ -51,6 +50,14 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Spline -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.1.1/build/spline-viewer.js"
+    ></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body class="text-white font-titan-one overflow-x-hidden">
@@ -282,12 +289,12 @@
           </div>
         </div>
 
-        <img
-          src="./assets/images/hero-image.png"
-          alt="dog image"
-          class="max-w-full"
-          data-aos="fade-down"
-        />
+        <div class="pb-10 md:pb-0">
+          <spline-viewer
+            class="border-red-500 scale-150"
+            url="https://prod.spline.design/zTQrZsO226WCeJY4/scene.splinecode"
+          ></spline-viewer>
+        </div>
       </div>
     </section>
 
@@ -362,7 +369,7 @@
         <img
           src="./assets/images/no-cats.png"
           alt="no cats past this point"
-          class="max-w-full xl:max-w-xl mx-auto pt-20"
+          class="max-w-full xl:max-w-xl mx-auto pt-20 slowly-bounce"
           data-aos="fade-up"
         />
       </div>
@@ -427,7 +434,7 @@
           <img
             src="./assets/images/dog-statue-w-paws.png"
             alt="dog image with paws"
-            class="max-w-full lg:mr-auto"
+            class="max-w-full lg:mr-auto slowly-bounce"
           />
         </div>
 
