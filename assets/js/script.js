@@ -16,6 +16,10 @@ tailwind.config = {
       },
       fontFamily: {
         'titan-one': ['Titan One', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      screens: {
+        xsm: '425px',
       },
     },
   },
@@ -29,16 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('#mobile-navbar a');
 
   openButton.addEventListener('click', function () {
-    mobileNavbar.style.transform = 'translateX(0)';
+    mobileNavbar.style.transform = 'translateY(0)';
   });
 
   closeButton.addEventListener('click', function () {
-    mobileNavbar.style.transform = 'translateX(100%)';
+    mobileNavbar.style.transform = 'translateY(-100%)';
   });
 
   navLinks.forEach((link) => {
     link.addEventListener('click', function () {
-      mobileNavbar.style.transform = 'translateX(100%)';
+      mobileNavbar.style.transform = 'translateY(-100%)';
     });
   });
 });

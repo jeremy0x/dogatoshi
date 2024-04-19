@@ -13,17 +13,3 @@ img {
 .container {
   max-width: 1200px !important;
 }
-
-.slowly-bounce {
-  animation: bounce 5s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}

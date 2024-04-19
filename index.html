@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Titan+One&display=swap"
       rel="stylesheet"
     />
 
@@ -62,7 +62,7 @@
 
   <body class="text-white font-titan-one overflow-x-hidden">
     <!-- Navbar -->
-    <nav class="bg-[#1F2123] sticky top-0 z-10 font-sans">
+    <nav class="bg-[#1F2123] sticky top-0 z-10 font-inter text-lg">
       <div
         class="container mx-auto flex items-center justify-between px-4 sm:px-8 lg:py-4"
       >
@@ -153,7 +153,7 @@
     <!-- Mobile Navbar -->
     <div
       id="mobile-navbar"
-      class="fixed top-0 left-0 w-full h-full bg-[#1F2123] z-50 transform translate-x-full overflow-y-auto transition-transform duration-300 ease-in-out"
+      class="fixed grid place-items-center top-0 left-0 w-full h-full bg-[#1F2123]/95 backdrop-blur z-50 transform -translate-y-full overflow-y-auto transition-transform duration-300 ease-in-out"
     >
       <button
         id="close-button"
@@ -162,7 +162,9 @@
       >
         X
       </button>
-      <ul class="flex flex-col gap-8 p-8 text-2xl">
+      <ul
+        class="flex flex-col gap-12 p-8 text-center text-3xl font-inter font-semibold"
+      >
         <li>
           <a
             href="#hero"
@@ -224,15 +226,15 @@
       ></div>
 
       <div
-        class="container mx-auto flex flex-col-reverse items-center justify-evenly md:flex-row gap-8 px-8 lg:-translate-y-28"
+        class="container mx-auto flex flex-col-reverse items-center lg:items-start justify-evenly md:flex-row gap-8 px-8"
       >
-        <div class="max-w-64 pl-4 sm:pl-0" data-aos="fade-up">
-          <h1 class="text-7xl lg:text-8xl uppercase">
+        <div class="max-w-72 z-10 flex-1" data-aos="fade-up">
+          <h1 class="text-8xl lg:text-9xl uppercase">
             <span>DOGA</span><br />
             <span class="text-yellow-500">TOSHI</span>
           </h1>
 
-          <p class="mt-4 font-sans pl-2 sm:pl-4">
+          <p class="mt-4 font-inter text-lg pl-2 sm:pl-4">
             Paw-nonymous: a clandestine group of dogs who secretly run the
             neighborhood.
           </p>
@@ -245,60 +247,69 @@
             <img
               src="./assets/images/bone-button.svg"
               alt=""
-              class="w-52 sm:mx-auto"
+              class="w-60 mx-auto"
             />
           </button>
 
-          <div class="flex gap-4 items-center p-4 sm:justify-center">
+          <div class="flex gap-4 items-center p-4 justify-center">
             <a
               href="#"
               title="Medium"
-              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
             >
               <img
                 src="./assets/images/medium-icon.svg"
                 alt="Medium"
-                class="w-5"
+                class="w-8"
               />
             </a>
             <a
               href="https://t.me/dogatoshi"
               title="Telegram"
-              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
             >
               <img
                 src="./assets/images/telegram-icon.svg"
                 alt="Telegram"
-                class="w-5"
+                class="w-8"
               />
             </a>
             <a
               href="https://twitter.com/4dogatoshi"
               title="Twitter"
-              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
             >
               <img
                 src="./assets/images/twitter-icon.svg"
                 alt="Twitter"
-                class="w-5"
+                class="w-8"
               />
             </a>
             <a
               href="#"
               title="Discord"
-              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+              class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
             >
               <img
                 src="./assets/images/discord-icon.svg"
                 alt="Discord"
-                class="w-5"
+                class="w-8"
               />
             </a>
           </div>
         </div>
 
-        <div class="py-64 sm:py-28 md:py-0">
-          <div class="scale-[5] pl-4 sm:pl-0 sm:scale-125">
+        <div class="flex-1 pt-20 pb-10 xl:hidden">
+          <img
+            src="./assets/images/hero-image.png"
+            alt="dog image"
+            class="lg:max-w-lg sm:max-w-md max-w-full w-full ml-auto"
+            data-aos="fade-down"
+          />
+        </div>
+
+        <div class="hidden xl:block">
+          <div class="scale-[1.85] translate-x-1/4">
             <spline-viewer
               url="https://prod.spline.design/zTQrZsO226WCeJY4/scene.splinecode"
             ></spline-viewer>
@@ -309,12 +320,12 @@
 
     <!-- 3 Steps to Know the Project -->
     <section id="bone-story" class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-10">
+      <div class="container mx-auto px-4 sm:px-8 py-20 lg:py-32 grid gap-10">
         <div class="text-center grid gap-2" data-aos="fade-up">
-          <h2 class="text-yellow-500 text-4xl uppercase">
+          <h2 class="text-yellow-500 text-4xl sm:text-5xl uppercase">
             3 steps to know the project
           </h2>
-          <p class="">
+          <p class="text-xl sm:text-2xl">
             Introducing Dogatoshi, where woofs meet wealth in the world of meme
             tokens! 🐾🌕
           </p>
@@ -325,16 +336,16 @@
           data-aos="fade-up"
         >
           <div class="flex-1 w-4/5 mx-auto sm:max-w-xs">
-            <div class="flex flex-col gap-4 p-4">
+            <div class="flex flex-col gap-2 p-4">
               <img
                 src="./assets/images/bone.png"
                 alt="Bone"
-                class="w-24 mx-auto"
+                class="w-28 sm:w-32 mx-auto pb-4"
               />
-              <h3 class="text-yellow-500 text-2xl uppercase">
+              <h3 class="text-yellow-500 text-2xl sm:text-3xl uppercase">
                 1. $Dog<span class="text-white">A</span>
               </h3>
-              <p class="font-sans">
+              <p class="font-inter sm:text-lg">
                 is revolutionizing the memepaw game with cutting-edge doggy
                 calculations, crafting the most bark-tastic smart contract known
                 to dogkind!
@@ -342,32 +353,32 @@
             </div>
           </div>
           <div class="flex-1 w-4/5 mx-auto sm:max-w-xs">
-            <div class="flex flex-col gap-4 p-4">
+            <div class="flex flex-col gap-2 p-4">
               <img
                 src="./assets/images/dog-paw.png"
                 alt="Dog Paw"
-                class="w-24 mx-auto"
+                class="w-28 sm:w-32 mx-auto pb-4"
               />
-              <h3 class="text-yellow-500 text-2xl uppercase">
+              <h3 class="text-yellow-500 text-2xl sm:text-3xl uppercase">
                 2. Paw Patro<span class="text-white">l</span>
               </h3>
-              <p class="font-sans">
+              <p class="font-inter sm:text-lg">
                 Paw-nonymous: a clandestine group of dogs who secretly run the
                 neighborhood.
               </p>
             </div>
           </div>
           <div class="flex-1 w-4/5 mx-auto sm:max-w-xs">
-            <div class="flex flex-col gap-4 p-4">
+            <div class="flex flex-col gap-2 p-4">
               <img
                 src="./assets/images/dog.png"
                 alt="Dog"
-                class="w-24 mx-auto"
+                class="w-28 sm:w-32 mx-auto pb-4"
               />
-              <h3 class="text-yellow-500 text-2xl uppercase">
+              <h3 class="text-yellow-500 text-2xl sm:text-3xl uppercase">
                 3. Mutt-fi<span class="text-white">A</span>
               </h3>
-              <p class="font-sans">
+              <p class="font-inter text-lg">
                 Brains behind the Bark-tel: Unless chasing his tail, he's one
                 clever pup.
               </p>
@@ -376,9 +387,9 @@
         </div>
 
         <img
-          src="./assets/images/no-cats.png"
+          src="./assets/images/no-cats.svg"
           alt="no cats past this point"
-          class="max-w-full xl:max-w-xl mx-auto pt-20 slowly-bounce"
+          class="max-w-full md:max-w-2xl w-full mx-auto pt-20"
           data-aos="fade-up"
         />
       </div>
@@ -401,17 +412,19 @@
       </div>
 
       <div
-        class="container mx-auto flex flex-col-reverse items-center justify-center md:flex-row gap-2 px-8 xl:px-0"
+        class="container mx-auto flex flex-col-reverse items-center lg:items-end xl:items-center justify-center xl:justify-start lg:flex-row gap-2 xsm:px-8 xl:px-0"
         data-aos="fade-up"
       >
-        <div class="grid gap-8 flex-1">
-          <h3 class="text-4xl text-yellow-500 hidden sm:block">
+        <div class="grid gap-10 z-10 px-8 xsm:px-0">
+          <h3
+            class="text-5xl text-yellow-500 hidden sm:block xl:whitespace-nowrap"
+          >
             BARKCHAIN Tokenomics
           </h3>
 
-          <div>
-            <h4 class="text-xl text-yellow-500">LEASH LAWS 🔑</h4>
-            <ul>
+          <div class="grid gap-1">
+            <h4 class="text-2xl sm:text-3xl text-yellow-500">LEASH LAWS 🔑</h4>
+            <ul class="text-xl sm:text-2xl">
               <li>95% DOGMMUNITY</li>
               <li>5% BARK BRIGADE KOLS</li>
               <li>100% TGE</li>
@@ -419,35 +432,49 @@
             </ul>
           </div>
 
-          <div>
-            <h4 class="text-xl text-yellow-500">
+          <div class="grid gap-1">
+            <h4 class="text-2xl sm:text-3xl text-yellow-500">
               🤑💰 WHERE TO BURY THE BONE? 💰🤑
             </h4>
-
-            <ul>
+            <ul class="text-xl sm:text-2xl">
               <li>1% LIQUIDITY SPLASH POOL</li>
               <li>99% ENDLESS BUYBACK TREAT</li>
               <li>TREATS</li>
             </ul>
           </div>
 
-          <div>
-            <h4 class="text-xl text-yellow-500">Stay for the treat 🦴</h4>
-            <p class="capitalize">
-              Hold your bone and get ready to be thrown some treats
+          <div class="grid gap-1">
+            <h4 class="text-2xl sm:text-3xl text-yellow-500">
+              Stay for the treat 🦴
+            </h4>
+            <p class="capitalize text-xl sm:text-2xl">
+              Hold Your Bone And Get Ready To Be Thrown 0.5% treats for every
+              transactions and 0.5% returned to the doguidity
             </p>
           </div>
         </div>
 
-        <div class="flex-1">
+        <div class="w-full">
           <img
-            src="./assets/images/dog-statue-w-paws.png"
+            src="./assets/images/dog-statue-w-paws.svg"
             alt="dog image with paws"
-            class="max-w-full lg:mr-auto slowly-bounce"
+            class="max-w-full lg:max-w-none lg:w-[768px] xl:w-[912px] lg:-ml-40 xl:-ml-64 lg:block hidden"
+          />
+          <img
+            src="./assets/images/dog-statue-w-paws-gradient.svg"
+            alt="dog image with paws"
+            class="max-w-full w-full hidden xsm:block lg:hidden"
+          />
+          <img
+            src="./assets/images/dog-statue-w-paws-gradient-portrait.svg"
+            alt="dog image with paws"
+            class="max-w-full w-full xsm:hidden"
           />
         </div>
 
-        <h3 class="text-4xl text-yellow-500 sm:hidden text-center">
+        <h3
+          class="text-4xl text-yellow-500 sm:hidden text-center px-8 xsm:px-0"
+        >
           BARKCHAIN Tokenomics
         </h3>
       </div>
@@ -455,11 +482,11 @@
 
     <!-- Bone Details -->
     <section id="bone-details" class="bg-features-bg-pattern bg-cover">
-      <div class="container mx-auto px-4 sm:px-8 py-10 sm:pt-40 sm:pb-20">
+      <div class="max-w-screen-lg mx-auto px-4 sm:px-8 py-10 sm:pt-40 sm:pb-20">
         <img
           src="./assets/images/details-bone.svg"
           alt=""
-          class="max-w-full mx-auto"
+          class="w-full mx-auto"
         />
       </div>
     </section>
@@ -467,9 +494,11 @@
     <!-- How to Buy $DOGA -->
     <section id="buy-doga" class="bg-features-bg-pattern bg-cover">
       <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-16">
-        <div class="text-center grid gap-2" data-aos="fade-up">
-          <h2 class="text-yellow-500 text-4xl uppercase">How to buy $DOGA</h2>
-          <p class="max-w-lg mx-auto">
+        <div class="text-center grid gap-4" data-aos="fade-up">
+          <h2 class="text-yellow-500 text-4xl sm:text-5xl uppercase">
+            How to buy $DOGA
+          </h2>
+          <p class="max-w-xl mx-auto text-xl sm:text-2xl">
             $DOGA may not have nine lives, but at least we're not chasing our
             tails with cryptic meow-tokens. We're all about fetching real value
             and loyalty, not mysterious catnip schemes. Woof woof!
@@ -478,15 +507,15 @@
 
         <div class="grid gap-4">
           <div
-            class="flex flex-wrap justify-center gap-8 flex-col sm:flex-row"
+            class="flex flex-wrap justify-center gap-4 flex-col sm:flex-row"
             data-aos="fade-up"
           >
-            <div class="flex-1 w-full sm:max-w-md">
-              <div class="flex flex-col gap-4 p-4">
-                <h3 class="text-yellow-500 text-2xl uppercase">
+            <div class="flex-1 w-full">
+              <div class="flex flex-col gap-2 p-4">
+                <h3 class="text-yellow-500 text-3xl sm:text-4xl uppercase">
                   1. Dig up a wallet
                 </h3>
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   To set up a wallet, grab Metamask or your preferred wallet app
                   for free from the App Store or Google Play Store. If you're on
                   a desktop, get the Google Chrome extension by visiting
@@ -494,12 +523,12 @@
                 </p>
               </div>
             </div>
-            <div class="flex-1 w-full sm:max-w-md">
-              <div class="flex flex-col gap-4 p-4">
-                <h3 class="text-yellow-500 text-2xl uppercase">
+            <div class="flex-1 w-full">
+              <div class="flex flex-col gap-2 p-4">
+                <h3 class="text-yellow-500 text-3xl sm:text-4xl uppercase">
                   2. Fetch some BNB
                 </h3>
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Keep some BNB in your treat stash to switch to $DOGA. If your
                   biscuit supply is low, you can fetch some on Metamask
                   directly, transfer from another stash, or buy on another
@@ -509,15 +538,15 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap justify-center gap-8 flex-col sm:flex-row"
+            class="flex flex-wrap justify-center gap-4 flex-col sm:flex-row"
             data-aos="fade-up"
           >
-            <div class="flex-1 w-full sm:max-w-md">
-              <div class="flex flex-col gap-4 p-4">
-                <h3 class="text-yellow-500 text-2xl uppercase">
+            <div class="flex-1 w-full">
+              <div class="flex flex-col gap-2 p-4">
+                <h3 class="text-yellow-500 text-3xl sm:text-4xl uppercase">
                   3. Sniff out PancakeSwap.
                 </h3>
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Visit pancakeswap.finance/swap on Google Chrome or in the
                   browser within your Metamutt app. Connect your wallet. Copy
                   and paste the $DOGA token address into PancakeSwap, choose
@@ -526,12 +555,12 @@
                 </p>
               </div>
             </div>
-            <div class="flex-1 w-full sm:max-w-md">
-              <div class="flex flex-col gap-4 p-4">
-                <h3 class="text-yellow-500 text-2xl uppercase">
+            <div class="flex-1 w-full">
+              <div class="flex flex-col gap-2 p-4">
+                <h3 class="text-yellow-500 text-3xl sm:text-4xl uppercase">
                   4. Swap your BNB for $DOGA.
                 </h3>
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Adjust the slippage tolerance to a minimum woof of 1.1%. In
                   times of increased volatility, like on a listing day with lots
                   of fetching and barking, consider setting a higher slippage.
@@ -547,7 +576,7 @@
     <section id="why-doga" class="bg-features-bg-pattern bg-cover">
       <div class="container mx-auto px-4 sm:px-8 py-20 grid gap-16">
         <h2
-          class="text-center text-yellow-500 text-4xl uppercase"
+          class="text-center text-yellow-500 text-4xl sm:text-5xl uppercase"
           data-aos="fade-up"
         >
           Why Pick Dogatoshi
@@ -558,7 +587,7 @@
             class="flex flex-wrap justify-center gap-8 flex-col sm:flex-row"
             data-aos="fade-up"
           >
-            <div class="flex-1 w-full sm:max-w-sm">
+            <div class="flex-1 w-full sm:max-w-md">
               <div class="flex gap-4 p-4">
                 <img
                   src="./assets/images/dog-paw-yellow-fill.png"
@@ -566,20 +595,20 @@
                   class="object-contain w-12 sm:w-16"
                 />
 
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Loyalty that sticks like peanut butter to a dog's tongue: We
                   are your ride-or-die companions in the wild world of crypto.
                 </p>
               </div>
             </div>
-            <div class="flex-1 w-full sm:max-w-sm">
+            <div class="flex-1 w-full sm:max-w-md">
               <div class="flex gap-4 p-4">
                 <img
                   src="./assets/images/dog-paw-yellow-fill.png"
                   alt=""
                   class="object-contain w-12 sm:w-16"
                 />
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Energy levels that put a squirrel on espresso to shame: Us
                   Dogs are bound forward with more gusto than a cat chasing a
                   laser pointer.
@@ -591,7 +620,7 @@
             class="flex flex-wrap justify-center gap-8 flex-col sm:flex-row"
             data-aos="fade-up"
           >
-            <div class="flex-1 w-full sm:max-w-sm">
+            <div class="flex-1 w-full sm:max-w-md">
               <div class="flex gap-4 p-4">
                 <img
                   src="./assets/images/dog-paw-yellow-fill.png"
@@ -599,13 +628,13 @@
                   class="object-contain w-12 sm:w-16"
                 />
 
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Team spirit that makes cats hiss in envy: Dogs know how to
                   work together like a well-oiled fetch machine.
                 </p>
               </div>
             </div>
-            <div class="flex-1 w-full sm:max-w-sm">
+            <div class="flex-1 w-full sm:max-w-md">
               <div class="flex gap-4 p-4">
                 <img
                   src="./assets/images/dog-paw-yellow-fill.png"
@@ -613,14 +642,14 @@
                   class="object-contain w-12 sm:w-16"
                 />
 
-                <p class="font-sans">
+                <p class="font-inter text-lg sm:text-xl">
                   Protection that makes cats scamper up a tree: We keeps your
                   investments safe and sound, no cat burglars allowed.
                 </p>
               </div>
             </div>
           </div>
-          <div class="flex-1 w-full sm:max-w-sm mx-auto" data-aos="fade-up">
+          <div class="flex-1 w-full sm:max-w-md mx-auto" data-aos="fade-up">
             <div class="flex gap-4 p-4">
               <img
                 src="./assets/images/dog-paw-yellow-fill.png"
@@ -628,7 +657,7 @@
                 class="object-contain w-12 sm:w-16"
               />
 
-              <p class="font-sans">
+              <p class="font-inter text-lg sm:text-xl">
                 Playfulness and fun that'll have cats meow-t of envy: Your
                 pawesome friends brings the party to the crypto world, leaving
                 those felines in the litter box.
@@ -642,10 +671,10 @@
     <!-- Pledge and Signature -->
     <section
       id="pledge-and-signature"
-      class="bg-features-bg-pattern bg-cover font-sans"
+      class="bg-features-bg-pattern bg-cover font-inter text-lg"
     >
       <div
-        class="container mx-auto px-4 sm:px-8 py-20 flex flex-col md:flex-row gap-16 justify-between"
+        class="container mx-auto px-4 sm:px-8 py-20 flex flex-col md:flex-row gap-16 justify-between text-sm"
       >
         <div
           class="grid gap-8 flex-1 max-w-sm mx-auto sm:mx-0"
@@ -682,56 +711,60 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-footer-bg-pattern bg-cover">
+    <footer class="bg-footer-bg-pattern bg-center bg-cover relative">
+      <div class="absolute top-4 right-4">
+        <img src="./assets/images/stripes.svg" alt="" />
+      </div>
+
       <div class="grid gap-8 py-16 px-4 text-center" data-aos="fade-in">
-        <h2 class="text-4xl lg:text-6xl">JOIN OUR DOGMMUNITY</h2>
+        <h2 class="text-5xl sm:text-6xl">JOIN OUR DOGMMUNITY</h2>
         <div class="flex gap-4 justify-center items-center">
           <a
             href="#"
             title="Medium"
-            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
           >
             <img
               src="./assets/images/medium-icon.svg"
               alt="Medium"
-              class="w-5"
+              class="w-8"
             />
           </a>
           <a
             href="https://t.me/dogatoshi"
             title="Telegram"
-            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
           >
             <img
               src="./assets/images/telegram-icon.svg"
               alt="Telegram"
-              class="w-5"
+              class="w-8"
             />
           </a>
           <a
             href="https://twitter.com/4dogatoshi"
             title="Twitter"
-            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
           >
             <img
               src="./assets/images/twitter-icon.svg"
               alt="Twitter"
-              class="w-5"
+              class="w-8"
             />
           </a>
           <a
             href="#"
             title="Discord"
-            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-8 h-8 rounded-full grid place-items-center"
+            class="hover:scale-110 transition-all ease-in-out transform bg-yellow-500 w-12 h-12 rounded-full grid place-items-center"
           >
             <img
               src="./assets/images/discord-icon.svg"
               alt="Discord"
-              class="w-5"
+              class="w-8"
             />
           </a>
         </div>
-        <div class="font-sans text-xs grid gap-1">
+        <div class="font-inter text-xs grid gap-1">
           <p>2024 by DOGATOSHI All rights reserved. Powered by Ordify.</p>
           <p class="max-w-sm mx-auto text-white/70 px-2">
             This meme coin is made purely for entertainment and utility and does
