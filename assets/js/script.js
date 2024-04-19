@@ -19,7 +19,7 @@ tailwind.config = {
         inter: ['Inter', 'sans-serif'],
       },
       screens: {
-        xsm: '425px',
+        xsm: '475px',
       },
     },
   },
