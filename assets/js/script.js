@@ -2,7 +2,7 @@
 AOS.init({
   duration: 1500,
   once: true,
-  startEvent: 'load',
+  startEvent: 'DOMContentLoaded',
 });
 
 // Tailwind Config
