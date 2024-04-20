@@ -49,11 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Preloader
-window.addEventListener('load', function () {
+const removePreloader = () => {
   const preloader = document.getElementById('preloader');
+  preloader.style.transform = 'translateY(-100%)';
+  preloader.style.opacity = '0';
+};
 
-  setTimeout(() => {
-    preloader.style.transform = 'translateY(-100%)';
-    preloader.style.opacity = '0';
-  }, 1000);
-});
+if (document.readyState === 'complete') {
+  removePreloader();
+} else {
+  window.addEventListener('load', removePreloader);
+}
