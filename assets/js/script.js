@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Preloader
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   const preloader = document.getElementById('preloader');
 
   setTimeout(() => {
