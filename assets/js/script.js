@@ -51,12 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
 // Preloader
 const removePreloader = () => {
   const preloader = document.getElementById('preloader');
-  preloader.style.transform = 'translateY(-100%)';
-  preloader.style.opacity = '0';
+  setTimeout(() => {
+    preloader.style.transform = 'translateY(-100%)';
+    preloader.style.opacity = '0';
+  }, 1000);
 };
 
-if (document.readyState === 'complete') {
-  removePreloader();
+if (window.innerWidth < 1024) {
+  document.addEventListener('DOMContentLoaded', removePreloader);
 } else {
   window.addEventListener('load', removePreloader);
 }
