@@ -47,3 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Preloader
+document.addEventListener('DOMContentLoaded', function () {
+  const preloader = document.getElementById('preloader');
+
+  setTimeout(() => {
+    preloader.style.transform = 'translateY(-100%)';
+    preloader.style.opacity = '0';
+  }, 2000);
+});

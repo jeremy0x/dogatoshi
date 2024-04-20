@@ -61,6 +61,35 @@
   </head>
 
   <body class="text-white font-titan-one overflow-x-hidden">
+    <!-- Preloader -->
+    <div
+      id="preloader"
+      class="fixed top-0 left-0 w-full h-full bg-[#25272D] grid place-items-center z-50 transition-all"
+    >
+      <div class="absolute top-0 right-0">
+        <img src="./assets/images/right-paw.svg" alt="" class="w-24 sm:w-32" />
+      </div>
+      <div class="absolute bottom-8 left-0">
+        <img src="./assets/images/left-paw.svg" alt="" class="w-24 sm:w-32" />
+      </div>
+
+      <div class="grid gap-8 place-items-center">
+        <img
+          src="./assets/images/dogatoshi-icon.svg"
+          alt="dogatoshi logo"
+          class="w-32 lg:w-44 animate-bounce"
+        />
+        <div class="text-center grid gap-4">
+          <p class="text-2xl sm:text-3xl animate-pulse text-yellow-500">
+            Loading...
+          </p>
+          <p class="sm:text-2xl text-neutral-400">
+            🐾 Unleashing the fun! Sit, stay, enjoy! 🐶
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- Navbar -->
     <nav
       class="bg-[#1F2123] fixed top-0 w-full z-40 font-inter text-sm border-b border-white/10 lg:border-0 lg:shadow-lg"
@@ -230,7 +259,11 @@
       <div
         class="container mx-auto flex flex-col-reverse items-center justify-evenly md:flex-row gap-8 px-8"
       >
-        <div class="max-w-72 z-10 flex-1" data-aos="zoom-out">
+        <div
+          class="max-w-72 z-10 flex-1"
+          data-aos="zoom-out"
+          data-aos-delay="2500"
+        >
           <h1 class="text-8xl lg:text-9xl uppercase">
             <span>DOGA</span><br />
             <span class="text-yellow-500">TOSHI</span>
@@ -283,7 +316,11 @@
           </div>
         </div>
 
-        <div class="flex-1 pt-20 pb-10 xl:hidden" data-aos="zoom-out">
+        <div
+          class="flex-1 pt-20 pb-10 xl:hidden"
+          data-aos="zoom-out"
+          data-aos-delay="2500"
+        >
           <img
             src="./assets/images/hero-image.png"
             alt="dog image"
@@ -292,9 +329,10 @@
           />
         </div>
 
-        <div class="hidden xl:block" data-aos="zoom-out">
+        <div class="hidden xl:block" data-aos="zoom-out" data-aos-delay="2500">
           <div class="scale-[1.85] translate-x-1/4">
             <spline-viewer
+              loading-anim-type="spinner-big-light"
               url="https://prod.spline.design/zTQrZsO226WCeJY4/scene.splinecode"
             ></spline-viewer>
           </div>
