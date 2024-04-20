@@ -2,7 +2,7 @@
 AOS.init({
   duration: 1500,
   once: true,
-  startEvent: 'DOMContentLoaded',
+  startEvent: 'load',
 });
 
 // Tailwind Config
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Preloader
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
   const preloader = document.getElementById('preloader');
 
   setTimeout(() => {
