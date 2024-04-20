@@ -55,5 +55,5 @@ window.addEventListener('load', function () {
   setTimeout(() => {
     preloader.style.transform = 'translateY(-100%)';
     preloader.style.opacity = '0';
-  }, 2000);
+  }, 1000);
 });
